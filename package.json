@@ -1,0 +1,19 @@
+{
+  "name": "icon-overlay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/icon-overlay.js",
+  "scripts": {
+    "build": "babel icon-overlay.js -o icon-overlay.dev.js --presets=@babel/env && parcel build icon-overlay.dev.js -d dist -o icon-overlay.min.js"
+  },
+  "author": "Erik Isaksen",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/runtime": "^7.0.0",
+    "parcel": "^1.9.7"
+  }
+}
